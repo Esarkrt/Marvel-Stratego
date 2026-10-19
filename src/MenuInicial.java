@@ -16,6 +16,7 @@ public class MenuInicial extends JFrame{
         this.setLocation(650, 200);
         ImageIcon logo=new ImageIcon("Marvel.png");
         this.setIconImage(logo.getImage());
+        
 
     }
 
