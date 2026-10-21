@@ -3,13 +3,13 @@ public abstract class Pieza {
     protected String Nombre;
     protected int Rango;
     protected BANDO Bando;
-    protected boolean Reveleado;
+    protected boolean Revelado;
 
-    public Pieza(String Nombre, int Rango, BANDO Bando, boolean Reveleado) {
+    public Pieza(String Nombre, int Rango, BANDO Bando,String Icono) {
         this.Nombre = Nombre;
         this.Rango = Rango;
         this.Bando = Bando;
-        this.Reveleado = Reveleado;
+        this.Revelado = false;
     }
     public abstract boolean puedeMoverse();
 
@@ -26,11 +26,11 @@ public abstract class Pieza {
     }
 
     public boolean isReveleado() {
-        return Reveleado;
+        return Revelado;
     }
 
     public void setReveleado(boolean Reveleado) {
-        this.Reveleado = Reveleado;
+        this.Revelado = Reveleado;
     }
     
 }
