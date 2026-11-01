@@ -1,3 +1,6 @@
+
+import javax.swing.SwingUtilities;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,8 +14,9 @@
 public class Principal {
     
 
-public static void main(String[]args){
-        MenuInicial v1=new MenuInicial();
-        v1.setVisible(true);
-}
+public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new MenuInicial().setVisible(true);
+        });
+    }
 }
